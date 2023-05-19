@@ -570,13 +570,8 @@ nav .logo::after {
 .lang-holder .programing-lang .lang-banner {
   margin-top: 30px;
 }
-.lang-holder .programing-lang .lang-banner #sass {
-  padding: 20px;
-}
-.lang-holder .programing-lang .lang-banner .npm img {
-  width: 82px;
-}
-.lang-holder .programing-lang .lang-banner div {
+
+.lang-holder .programing-lang .lang-banner div div {
   padding: 10px 10px 10px 20px;
   margin: 25px auto;
   display: -webkit-box;
@@ -585,13 +580,17 @@ nav .logo::after {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 70%;
+  justify-content: center;
+  width: 85%;
   background-color: #fff;
+  img{
+    margin-right: 10px;
+  }
 }
-.lang-holder .programing-lang .lang-banner div #p {
+.lang-holder .programing-lang .lang-banner div div #p {
   font-size: 1.7rem;
-  margin-left: 15px;
   font-weight: 400;
+  // margin: 1px;
   font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
 }
@@ -974,8 +973,8 @@ nav .logo::after {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .lang-holder .programing-lang .lang-banner div {
-    width: 260px;
+  .lang-holder .programing-lang .lang-banner div div {
+    width: 280px;
     margin: 25px;
   }
   .footer .footer-banner {
@@ -1895,4 +1894,3 @@ nav .logo::after {
     transform: scaleX(0);
   }
 }
-

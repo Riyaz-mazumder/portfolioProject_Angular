@@ -795,7 +795,7 @@
     <div class="currcle-rotate"><div class="rotate rotate1"></div></div>
     <img
       id="avater-img"
-      src="assets/image/Riyaz_img (1).jpg"
+      src="assets/image/Riaj.jpg"
       alt="Riyaz avater"
     />
   </div>
@@ -863,7 +863,7 @@
         <div class="about-img_holder">
           <img
             id="about-img_holder-img"
-            data-src="assets/image/about-me-bg.png"
+            src="assets/image/about-me-bg.png"
             alt="about me image"
           />
         </div>
@@ -1776,48 +1776,18 @@
           Programing languages and Tools that I use for developing web Applications/apps.
         </p>
       </div>
+      <!-- programing languge -->
       <div class="lang-banner">
-        <div class="react">
-          <img data-src="assets/image/resiged/react.png" alt="logo" />
-          <p id="p">React</p>
-        </div>
-        <div class="redux">
+      <div  *ngFor="let l of programingLanguages">
+
+        <div >
           <img
-            data-src="assets/image/resiged/redux-logo.png"
+            src="{{l.image}}"
             alt="logo"
           />
-          <p id="p">Redux</p>
+          <p id="p">{{l.name}}</p>
         </div>
-        <div class="javascript">
-          <img
-            data-src="assets/image/resiged/javascript-img.png"
-            alt="logo"
-          />
-          <p id="p">Javascript</p>
-        </div>
-        <div class="typescript">
-          <img
-            data-src="assets/image/resiged/Typescript_logo.png"
-            alt="logo"
-          />
-          <p id="p">Typescript</p>
-        </div>
-        <div class="css">
-          <img data-src="assets/image/resiged/css3.png" alt="logo" />
-          <p id="p">CSS</p>
-        </div>
-        <div id="sass">
-          <img data-src="assets/image/resiged/sass.png" alt="logo" />
-          <p id="p">Sass</p>
-        </div>
-        <div class="html">
-          <img data-src="assets/image/resiged/html.png" alt="logo" />
-          <p id="p">HTML</p>
-        </div>
-        <div class="git">
-          <img data-src="assets/image/resiged/git.png" alt="logo" />
-          <p id="p">Git</p>
-        </div>
+      </div>
       </div>
     </div>
   </div>
