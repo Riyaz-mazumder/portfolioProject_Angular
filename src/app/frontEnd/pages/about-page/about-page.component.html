@@ -15,7 +15,7 @@
           </p>
         </div>
         <div class="about-img_holder">
-          <img src="../source/image/about-me-bg.png" alt="about me image" />
+          <img src="assets/image/about-me-bg.png" alt="about me image" />
         </div>
       </div>
     </div>
@@ -903,9 +903,9 @@
     <div class="education-des">
       <h2>Education</h2>
       <div class="edu-first">
-        <h3>2020 -</h3>
+        <h3>IDB -</h3>
         <p id="edu-p">
-          In 2020, I earned a Bachelor's degree from a Islamic University.
+          PGD in Enterprise Systems Analysis & Design - JEE (ESAD-JEE) From IsDB BISEW
         </p>
       </div>
       <div class="edu-present">
@@ -917,60 +917,64 @@
       </div>
     </div>
   </div>
-  <div class="lang-holder">
-    <div class="lang-holder_hight"></div>
-    <div class="programing-lang">
-      <div class="lang-des">
-        <h2>My Skills</h2>
-        <p id="skill-des">
-          Programing languages and Tools that I use for developing web Applications/apps.
-        </p>
-      </div>
-      <div class="lang-banner">
-        <div class="react">
-          <img data-src="assets/image/resiged/react.png" alt="logo" />
-          <p id="p">React</p>
-        </div>
-        <div class="redux">
-          <img
-            data-src="assets/image/resiged/redux-logo.png"
-            alt="logo"
-          />
-          <p id="p">Redux</p>
-        </div>
-        <div class="javascript">
-          <img
-            data-src="assetsimage/resiged/javascript-img.png"
-            alt="logo"
-          />
-          <p id="p">Javascript</p>
-        </div>
-        <div class="typescript">
-          <img
-            data-src="assets/image/resiged/Typescript_logo.png"
-            alt="logo"
-          />
-          <p id="p">Typescript</p>
-        </div>
-        <div class="css">
-          <img data-src="assets/image/resiged/css3.png" alt="logo" />
-          <p id="p">CSS</p>
-        </div>
-        <div id="sass">
-          <img data-src="assets/image/resiged/sass.png" alt="logo" />
-          <p id="p">Sass</p>
-        </div>
-        <div class="html">
-          <img data-src="assets/image/resiged/html.png" alt="logo" />
-          <p id="p">HTML</p>
-        </div>
-        <div class="git">
-          <img data-src="assets/image/resiged/git.png" alt="logo" />
-          <p id="p">Git</p>
+
+
+      <div class="lang-holder">
+        <div class="lang-holder_hight"></div>
+        <div class="programing-lang">
+          <div class="lang-des">
+            <h2>My Skills</h2>
+            <p id="skill-des">
+              Programing languages and Tools that I use for developing web Applications/apps.
+            </p>
+          </div>
+          <!-- programing languge -->
+          <div class="lang-banner">
+          <div  *ngFor="let l of programingLanguages">
+    
+            <div >
+              <img
+                src="{{l.image}}"
+                alt="logo"
+              />
+              <p id="p">{{l.name}}</p>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
+      <div style="margin-top: 40px;" class="project">
+        <h2 style="margin-left: 65px;" id="projectTitle">Projects</h2>
+    
+        <div style="margin: 20px 50px;" class="project-container">
+          <!-- Project -->
+          <div *ngFor="let p of defaultProjects">
+        
+          <div class="project-card">
+            <img class="project-image" src="{{p.projectImage}}" alt="Project 1">
+            <div id="card-cover">
+              <h2 id="h2" style="color: #333;">{{p.projectName}}</h2>
+              <h3 style=" color: #0047e0;"><i>{{p.appType}}</i></h3>
+              <p class="des">{{p.projectDescription}}</p>
+              <p>
+                <strong>Project URL: &nbsp; </strong>
+                <a style="  color: inherit;" href="{{p.projectLiveUrl}}">{{p.projectLiveUrl}}</a>
+              </p>
+              <p>
+                <strong>GitHub Repository: &nbsp; </strong>
+                <a style="  color: inherit;" href="{{p.projectGithubLink}}">{{p.projectGithubLink}}</a>
+              </p>
+              <p class="pLang">
+                <strong>Programing Languages Used: &nbsp; </strong>
+                  <span>{{p.programingLanguagesUsed}}</span>
+              </p>
+            </div>
+          </div>
+        
+          </div>
+        </div>
+       
   <div class="vertical-line"></div>
+      </div>
 </section>
 
