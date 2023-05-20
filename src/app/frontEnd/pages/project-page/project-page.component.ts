@@ -30,6 +30,33 @@ export class ProjectPageComponent  implements OnInit{
 
   
   defaultProjects =[
+    {
+      "projectImage": "",
+      "projectName":"",
+      "appType":"",
+      "projectDescription":"",
+      "projectLiveUrl":"",
+      "projectGithubLink":"",
+      "programingLanguagesUsed":"",
+    },
+    {
+      "projectImage": "",
+      "projectName":"",
+      "appType":"",
+      "projectDescription":"",
+      "projectLiveUrl":"",
+      "projectGithubLink":"",
+      "programingLanguagesUsed":"",
+    },
+    {
+      "projectImage": "",
+      "projectName":"",
+      "appType":"",
+      "projectDescription":"",
+      "projectLiveUrl":"",
+      "projectGithubLink":"",
+      "programingLanguagesUsed":"",
+    },
     
   ]
 
