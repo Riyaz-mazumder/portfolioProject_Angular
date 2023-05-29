@@ -25,6 +25,8 @@ header {
   top: 0;
   background-color: #fff;
   z-index: 2000;
+  
+
 }
 nav {
   margin: auto;
@@ -37,6 +39,8 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+ 
+
 }
 nav .logo {
   position: relative;
@@ -1893,4 +1897,7 @@ nav .logo::after {
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
   }
+}
+html{
+  max-width: 100%;
 }
