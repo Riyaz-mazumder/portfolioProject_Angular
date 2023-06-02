@@ -15,6 +15,8 @@ export class HeaderComponent implements OnInit{
     const s: HTMLElement[] = Array.from(nodeList) as HTMLElement[];
     const a = document.querySelector('.overley') as HTMLElement;
 
+    const b = document.querySelectorAll('.removeLinksOnClick') as NodeListOf<Element>;
+
     e.addEventListener('click', () => {
       t.classList.toggle('nav-active');
       s.forEach((e: HTMLElement, t: number) => {
@@ -36,5 +38,18 @@ export class HeaderComponent implements OnInit{
         e.style.animation = '';
       });
     });
+
+
+    b.forEach((element: Element) => {
+      element.addEventListener('click', () => {
+        a.classList.remove('overlay');
+        t.classList.remove('nav-active');
+        e.classList.remove('toggle');
+        s.forEach((e: HTMLElement, t: number) => {
+          e.style.animation = '';
+        });
+      });
+    });
+
   }
 }
